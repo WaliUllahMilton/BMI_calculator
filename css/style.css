@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 25vw;
+    height: 20vw;
     padding: 40px 20px;
     row-gap: 2.5vw;
     background-color: salmon;
@@ -38,7 +39,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 25vw;
-    padding: 10px 20px 220px;
+    height: 20vw;
+    padding: 1vw 2vw;
     row-gap: 2.5vw;
     background-color: salmon;
     border-radius: 2vw;
