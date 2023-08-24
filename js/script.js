@@ -6,9 +6,12 @@ let chart = document.querySelector(".chart");
 let bmi;
 
 btn.addEventListener("click", () => {
-    bmi = weight.value / (height.value * 0.3048) ** 2;
+    weight = weight.value * 2.20462;
+    height = height.value * 12;
+    height = height ** 2;
+    bmi = (weight / height) * 703;
     result.innerHTML = `BMI = ${bmi.toFixed(1)}`;
-    if (bmi < 18.5) {
+    if (bmi < 18.5 && bmi > 15.9) {
         chart.style.color = "red";
         chart.innerHTML = "You are Underweight.";
     } else if (bmi >= 18.5 && bmi <= 24.9) {
